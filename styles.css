@@ -1,0 +1,102 @@
+body {
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-color: #fff8e1;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 24px,
+        #d3a068 24px,
+        #d3a068 25px
+    );
+    pointer-events: none;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        #d3a068 0,
+        #d3a068 5px,
+        transparent 5px,
+        transparent 10px
+    );
+    pointer-events: none;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 248, 225, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+                -2px -2px 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid #d3a068;
+    width: 400px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #5d4037;
+    margin: 0 0 15px 0;
+    text-decoration: underline wavy #ff7043;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 18px;
+    color: #5d4037;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #8d5524;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #f4511e;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #d32f2f;
+}
